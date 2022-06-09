@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <windows.h>
+#include <Windows.h>
+#include <locale.h>
 
 struct Product
 {
@@ -53,9 +54,19 @@ void Z2()
     printf("\n Average height: %d \n", average_height);
 }
 
+void Z4()
+{
+    setlocale(LC_ALL, "Rus");
+
+    Sleep(7000);
+    system("color 85");
+    printf("%s", "Οσττ");
+}
+
 int main()
 {
     //Z2();
     //Z1();
     //Z3();
+    Z4();
 }
