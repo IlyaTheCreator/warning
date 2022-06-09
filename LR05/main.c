@@ -52,6 +52,22 @@ void Z2()
     }
 }
 
+void Z3()
+{
+    char str1[100];
+    char str2[100];
+    char str3[100];
+    char str4[1000];
+    scanf("%s %s %s", str1, str2, str3);
+    str1[0] = toupper(str1[0]);
+    str2[0] = toupper(str2[0]);
+    str3[0] = toupper(str3[0]);
+    strcat(str4, str1);
+    strcat(str4, str2);
+    strcat(str4, str3);
+    printf("%s", str4);
+}
+
 void Z4()
 {
     char sentence[50];
@@ -127,7 +143,8 @@ int main()
 {
     //Z1_1();
     //Z1_2();
-    // Z2();
-    // Z4();
-    Z5();
+    //Z2();
+    //Z3();
+    //Z4();
+    // Z5();
 }
