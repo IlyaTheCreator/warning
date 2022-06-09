@@ -4,6 +4,8 @@
 #define NI printf("¬ведите значение:");
 #define S3(x) x + 3
 #define SUMSQ(x, y) x * x + y * y
+#define OPTION 1
+#define SUMORSLG(x, y) OPTION ? x + y : x * y
 
 void Z1()
 {
@@ -28,5 +30,6 @@ int main()
     //Z1();
     //Z2(5);
     //printf("%d", Z3(3, 5, 4));
+    //printf("%d", SUMORSLG(4, 6));
     return 0;
 }
