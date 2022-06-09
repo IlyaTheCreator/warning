@@ -4,9 +4,10 @@
 	<stdlib.h>
 	<windows.h>
 
-1654779183 source:c:\users\эвелина\desktop\warning\lr05\main.c
+1654781050 source:c:\users\эвелина\desktop\warning\lr05\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	<string.h>
+	<math.h>
 

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <string.h>
+#include <math.h>
 
 void Z1_1()
 {
@@ -74,10 +75,59 @@ void Z4()
     }
 }
 
+void Z5()
+{
+    int card_number, i, j, remainder;
+    int card_number_arr[20];
+
+    printf("Enter card number: \n");
+    scanf("%d", &card_number);
+
+    i = 0;
+
+    while (card_number != 0)
+    {
+        remainder = card_number % 10;
+        card_number_arr[i] = remainder;
+        i++;
+        card_number = card_number / 10;
+    }
+
+    int multiplied_result = 0;
+
+    for (j = i - 1; j > -1; j--)
+    {
+        if (j % 2 != 0)
+        {
+            card_number_arr[j] = card_number_arr[j] * 2;
+
+            if (card_number_arr[j] / 10 >= 10 && card_number_arr[j] <= 99)
+            {
+                card_number_arr[j] = card_number_arr[j] - 9;
+            }
+        }
+
+        printf("VALUE: %d \n", card_number_arr[j]);
+
+        multiplied_result += card_number_arr[j];
+    }
+
+    printf("RESULT: %d \n", multiplied_result);
+
+    if (multiplied_result % 10 == 0)
+    {
+        printf("\nCard is valid");
+    } else
+    {
+        printf("\nCard is invalid");
+    }
+}
+
 int main()
 {
     //Z1_1();
     //Z1_2();
     // Z2();
-    Z4();
+    // Z4();
+    Z5();
 }
