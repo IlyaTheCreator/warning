@@ -63,10 +63,40 @@ void Z4()
     printf("%s", "Пуфф");
 }
 
+void Z6()
+{
+    setlocale(LC_ALL, "Rus");
+
+    struct Priem
+    {
+        char fio[20];
+        int ekz_1;
+        int ekz_2;
+        int ekz_3;
+    };
+
+    struct Priem priem;
+
+    printf("Введите ФИО.\n");
+    scanf("%s", priem.fio);
+
+    printf("\n Введите оценку 1-го экзамена: ");
+    scanf("%d%*c", &priem.ekz_1);
+    printf("\n Введите оценку 2-го экзамена: ");
+    scanf("%d%*c", &priem.ekz_2);
+    printf("\n Введите оценку 3-го экзамена: ");
+    scanf("%d%*c", &priem.ekz_3);
+
+    int result = priem.ekz_1 + priem.ekz_2 + priem.ekz_3;
+
+    printf("\n Общий балл: %d", result);
+}
+
 int main()
 {
     //Z2();
     //Z1();
     //Z3();
-    Z4();
+    //Z4();
+    Z6();
 }
