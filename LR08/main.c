@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <windows.h>
 
 struct Product
 {
@@ -16,7 +18,17 @@ void Z1()
     printf("%s %f", product.name, product.count * product.price);
 }
 
+void Z3()
+{
+    struct tm * timeinfo;
+    time_t rawtime;
+    time( &rawtime );
+    timeinfo = localtime( &rawtime );
+    printf("%s", asctime(timeinfo));
+}
+
 int main()
 {
     //Z1();
+    //Z3();
 }
