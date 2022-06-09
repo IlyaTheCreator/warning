@@ -27,9 +27,14 @@ int Z3(int a, int b, int c)
 
 int main()
 {
+    printf("%s %s\n", __TIME__, __DATE__);
     //Z1();
     //Z2(5);
     //printf("%d", Z3(3, 5, 4));
+
     //printf("%d", SUMORSLG(4, 6));
+
+    //printf("%s %s %d\n", __TIME__, __DATE__, __LINE__);
+
     return 0;
 }
