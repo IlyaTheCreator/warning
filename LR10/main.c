@@ -5,33 +5,44 @@ void Z1()
 {
 char contents[1000];
 
- //Opening the file
- FILE * fp;
- fp = fopen("./file1.txt", "w"); //"w" = write
+    FILE * fp;
+    fp = fopen("./file1.txt", "w");
 
- //If there is an error
- if(fp == NULL)
-{
-    //Exit
-    printf("Error!\n");
-    exit(EXIT_FAILURE);
+    if(fp == NULL)
+    {
+        printf("Error!\n");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("Enter the contents of file: \n");
+    fgets(contents, 1000, stdin);
+
+    fputs(contents, fp);
+
+    fclose(fp);
 }
 
-//This part require your input
-printf("Enter the contents of file: \n");
-fgets(contents, 1000, stdin);
+void Z2()
+{
+    char ch;
+    FILE *file;
+    int count = 0;
 
+    file = fopen("./file2.txt","r");
 
-//Write your input in file
-fputs(contents, fp);
+    while((ch = fgetc(file)) != EOF){
+        if(ch ==' ' || ch == '\n')
+            count++;
+    }
 
-//Close the file
-fclose(fp);
+    printf("Number of words: %d", count);
+    fclose(file);
 }
 
 int main()
 {
-    Z1();
+    // Z1();
+    Z2();
 
     return 0;
 }
