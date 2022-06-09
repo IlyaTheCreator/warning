@@ -63,7 +63,7 @@ void Z4()
     fclose(fp);
 }
 
-Z5()
+void Z5()
 {
     FILE *in_file;
     int number1, number2, number3, number4, number5, number6, number7, sum;
