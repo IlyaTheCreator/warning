@@ -19,6 +19,38 @@ void Z1_2()
         printf("%c - %i\n", i, i);
 }
 
+void Z2()
+{
+    int i;
+    int length = 8;
+
+    char input[8]  = { 'A', 'C', 'G', 'T', 'C', 'T', 'A', '\0' };
+    char output[8]  = { 'A', 'C', 'G', 'T', 'C', 'T', 'A', '\0' };
+
+    for (i = 0; i < length; i++)
+    {
+        if (output[i] == 'T') {
+            output[i] = 'U';
+        }
+    }
+
+    printf("Input: \n");
+
+    for (i = 0; i < length; i++)
+    {
+        printf("%c", input[i]);
+    }
+
+    printf("\n");
+
+    printf("Output: \n");
+
+    for (i = 0; i < length; i++)
+    {
+        printf("%c", output[i]);
+    }
+}
+
 void Z3()
 {
     char str1[100];
@@ -35,9 +67,34 @@ void Z3()
     printf("%s", str4);
 }
 
+void Z4()
+{
+    char sentence[50];
+    char word[10];
+    char *search_result;
+
+    printf("Enter a sentence: ");
+    scanf("%[^\n]", sentence);
+
+    printf("\n Enter a word:");
+    scanf(" %[^\n]", word);
+
+    search_result = strstr(sentence, word);
+
+    if (search_result)
+    {
+        printf("Word found");
+    } else
+    {
+        printf("Word not found");
+    }
+}
+
 int main()
 {
     //Z1_1();
     //Z1_2();
+    //Z2();
     //Z3();
+    //Z4();
 }
