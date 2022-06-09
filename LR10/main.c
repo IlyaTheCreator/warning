@@ -42,11 +42,23 @@ void Z2()
 void Z3()
 {
     FILE *fp;
-    int count = 0;
 
     fp = fopen("./file3.txt","w");
-
     fputs(__DATE__, fp);
+    fclose(fp);
+}
+
+void Z4()
+{
+    FILE *fp;
+    int i;
+
+    fp = fopen("./file4.txt","w");
+
+    for(i = 0; i < 100; i++)
+    {
+        fprintf(fp, " %d ", rand() % 101 + 1);
+    }
 
     fclose(fp);
 }
@@ -55,7 +67,8 @@ int main()
 {
     // Z1();
     // Z2();
-    Z3();
+    // Z3();
+    Z4();
 
     return 0;
 }
