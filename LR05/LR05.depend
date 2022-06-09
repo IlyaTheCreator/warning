@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1654777456 source:d:\projects\new\cproject\warning\lr05\main.c
+1654779274 source:d:\projects\new\cproject\warning\lr05\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
+	<string.h>
 
