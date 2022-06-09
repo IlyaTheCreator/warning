@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #define NI printf("¬ведите значение:");
 #define S3(x) x + 3
+#define SUMSQ(x, y) x * x + y * y
 
 void Z1()
 {
@@ -14,9 +16,17 @@ void Z2(int a)
     printf("%d", S3(a));
 }
 
+int Z3(int a, int b, int c)
+{
+    if ((a*a == SUMSQ(b, c)) | (b*b == SUMSQ(a, c)) | (c*c == SUMSQ(a, b)))
+        return 1;
+    return 0;
+}
+
 int main()
 {
     //Z1();
     //Z2(5);
+    //printf("%d", Z3(3, 5, 4));
     return 0;
 }
