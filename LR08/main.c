@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <windows.h>
+#include <locale.h>
 
 struct Product
 {
@@ -20,11 +21,15 @@ void Z1()
 
 void Z3()
 {
-    struct tm * timeinfo;
-    time_t rawtime;
-    time( &rawtime );
-    timeinfo = localtime( &rawtime );
-    printf("%s", asctime(timeinfo));
+    SetConsoleOutputCP(1251);
+    SetConsoleCP(1251);
+    setlocale(LC_ALL, "Rus");
+    struct tm *p;
+    char m[80] = {0};
+    const time_t timer = time(NULL);
+    p = localtime(&timer);
+    strftime(m, 80, "—годн€: %d, %B, %A, текущие врем€ %I:%M", p);
+    printf("%s", m);
 }
 
 int main()
