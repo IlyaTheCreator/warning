@@ -1,5 +1,19 @@
 # depslib dependency file v1.0
-1654783373 source:d:\projects\new\cproject\warning\lr08\main.c
+1654783373 
+
+1654792657 source:d:\projects\new\cproject\warning\lr08\main.c
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<locale.h>
+
+1654789141 source:c:\users\эвелина\desktop\warning\lr08\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<Windows.h>
+	<locale.h>
+
+1654789141 b157c23e2edd4d5c80f95613b12feb8e5f40d
 
