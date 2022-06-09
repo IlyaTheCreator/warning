@@ -3,7 +3,7 @@
 
 void Z1()
 {
-char contents[1000];
+    char contents[1000];
 
     FILE * fp;
     fp = fopen("./file1.txt", "w");
@@ -39,10 +39,23 @@ void Z2()
     fclose(file);
 }
 
+void Z3()
+{
+    FILE *fp;
+    int count = 0;
+
+    fp = fopen("./file3.txt","w");
+
+    fputs(__DATE__, fp);
+
+    fclose(fp);
+}
+
 int main()
 {
     // Z1();
-    Z2();
+    // Z2();
+    Z3();
 
     return 0;
 }
