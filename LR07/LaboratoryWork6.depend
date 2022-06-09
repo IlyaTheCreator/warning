@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1644476518 source:c:\prog\laboratoryworksp\laboratorywork6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
+1644478217 source:c:\prog\laboratoryworksp\laboratorywork6\testfanc.c
+	<stdlib.h>
+
+1644478394 source:c:\users\эвелина\desktop\lr07\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"TestFanc.h"
+
+1644478332 c:\users\эвелина\desktop\lr07\testfanc.h
+	<stdio.h>
+
+1644478217 source:c:\users\эвелина\desktop\lr07\testfanc.c
+	<stdlib.h>
+
+1644478394 source:c:\users\эвелина\desktop\warning\lr07\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"TestFanc.h"
+
+1644478332 c:\users\эвелина\desktop\warning\lr07\testfanc.h
+	<stdio.h>
+
+1644478217 source:c:\users\эвелина\desktop\warning\lr07\testfanc.c
+	<stdlib.h>
+
