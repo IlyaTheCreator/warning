@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <string.h>
 
 void Z1_1()
 {
@@ -50,9 +51,33 @@ void Z2()
     }
 }
 
+void Z4()
+{
+    char sentence[50];
+    char word[10];
+    char *search_result;
+
+    printf("Enter a sentence: ");
+    scanf("%[^\n]", sentence);
+
+    printf("\n Enter a word:");
+    scanf(" %[^\n]", word);
+
+    search_result = strstr(sentence, word);
+
+    if (search_result)
+    {
+        printf("Word found");
+    } else
+    {
+        printf("Word not found");
+    }
+}
+
 int main()
 {
     //Z1_1();
     //Z1_2();
-    Z2();
+    // Z2();
+    Z4();
 }
