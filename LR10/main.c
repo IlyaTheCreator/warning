@@ -63,12 +63,40 @@ void Z4()
     fclose(fp);
 }
 
+Z5()
+{
+    FILE *in_file;
+    int number1, number2, number3, number4, number5, number6, number7, sum;
+
+    in_file = fopen("./file5.txt", "r");
+
+    if (in_file == NULL)
+    {
+        printf("Can't open file for reading.\n");
+    }
+    else
+    {
+        fscanf(in_file, "%d", &number1);
+        fscanf(in_file, "%d", &number2);
+        fscanf(in_file, "%d", &number3);
+        fscanf(in_file, "%d", &number4);
+        fscanf(in_file, "%d", &number5);
+        fscanf(in_file, "%d", &number6);
+        fscanf(in_file, "%d", &number7);
+
+        sum = number1 + number2 + number3 + number4 + number5 + number6 + number7;
+        printf("Average: %d", sum / 7);
+        fclose(in_file);
+    }
+}
+
 int main()
 {
     // Z1();
     // Z2();
     // Z3();
-    Z4();
+    // Z4();
+    Z5();
 
     return 0;
 }
