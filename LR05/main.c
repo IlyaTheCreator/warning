@@ -18,8 +18,41 @@ void Z1_2()
         printf("%c - %i\n", i, i);
 }
 
+void Z2()
+{
+    int i;
+    int length = 8;
+
+    char input[8]  = { 'A', 'C', 'G', 'T', 'C', 'T', 'A', '\0' };
+    char output[8]  = { 'A', 'C', 'G', 'T', 'C', 'T', 'A', '\0' };
+
+    for (i = 0; i < length; i++)
+    {
+        if (output[i] == 'T') {
+            output[i] = 'U';
+        }
+    }
+
+    printf("Input: \n");
+
+    for (i = 0; i < length; i++)
+    {
+        printf("%c", input[i]);
+    }
+
+    printf("\n");
+
+    printf("Output: \n");
+
+    for (i = 0; i < length; i++)
+    {
+        printf("%c", output[i]);
+    }
+}
+
 int main()
 {
     //Z1_1();
     //Z1_2();
+    Z2();
 }
