@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1654789141 source:c:\users\эвелина\desktop\warning\lr08\main.c
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-	<Windows.h>
-	<locale.h>
-
